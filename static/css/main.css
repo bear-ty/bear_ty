@@ -1,0 +1,329 @@
+@import "./styles.css";
+
+:root {
+    --ink: #17233f;
+    --muted: #65718a;
+    --accent: #2855d9;
+    --accent-dark: #18358e;
+    --line: #dfe5ef;
+    --paper: #ffffff;
+    --tint: #f4f7fb;
+}
+
+body {
+    color: var(--ink);
+    background: var(--paper);
+    font-family: "Mulish", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+.header {
+    min-height: 72px;
+    border-bottom: 1px solid rgba(23, 35, 63, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(14px);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: var(--ink) !important;
+    letter-spacing: 0.02em;
+}
+
+.navbar-nav {
+    gap: 0.6rem;
+}
+
+.nav-link {
+    color: var(--muted) !important;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+}
+
+.top-section {
+    position: relative;
+    display: flex;
+    min-height: 640px;
+    padding: 11rem 0 8rem;
+    align-items: center;
+    overflow: hidden;
+    background:
+        linear-gradient(120deg, #101d3d 0%, #183b7a 55%, #2964b9 100%);
+}
+
+.top-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.22;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+    background-size: 54px 54px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+.top-section-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-kicker {
+    margin-bottom: 1.25rem;
+    color: #b9d2ff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.top-section h1 {
+    max-width: 900px;
+    margin: 0;
+    color: #fff;
+    font-family: "Newsreader", "Noto Serif SC", serif;
+    font-size: clamp(4.3rem, 10vw, 7.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.hero-name-en {
+    margin: 1rem 0 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-family: "Kanit", sans-serif;
+    font-size: clamp(1.55rem, 3vw, 2.4rem);
+    letter-spacing: 0.04em;
+}
+
+.hero-description {
+    max-width: 760px;
+    margin: 2.3rem 0 2rem;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.8;
+}
+
+.hero-link {
+    display: inline-flex;
+    gap: 0.65rem;
+    align-items: center;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-link:hover {
+    color: #cfe0ff;
+}
+
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(2px);
+    pointer-events: none;
+}
+
+.hero-orb-one {
+    width: 420px;
+    height: 420px;
+    right: -120px;
+    top: 90px;
+    background: rgba(91, 157, 255, 0.2);
+}
+
+.hero-orb-two {
+    width: 240px;
+    height: 240px;
+    right: 22%;
+    bottom: -130px;
+    background: rgba(95, 205, 232, 0.15);
+}
+
+.content-section {
+    padding: 7rem 0;
+    scroll-margin-top: 70px;
+}
+
+.section-light {
+    background: var(--paper);
+}
+
+.section-tinted {
+    background: var(--tint);
+}
+
+.section-layout {
+    display: grid;
+    grid-template-columns: minmax(170px, 0.32fr) minmax(0, 1fr);
+    gap: clamp(3rem, 8vw, 8rem);
+}
+
+.section-heading {
+    padding-top: 0.2rem;
+}
+
+.section-heading span {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: var(--accent);
+    font-family: "Kanit", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: var(--ink);
+    font-family: "Kanit", sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    letter-spacing: 0.035em;
+}
+
+.main-body {
+    max-width: 850px;
+    color: #43506a;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.95;
+}
+
+.main-body > p:first-child {
+    margin-top: 0;
+}
+
+.main-body strong {
+    color: var(--ink);
+}
+
+.main-body h4 {
+    margin: 2.25rem 0 0.75rem;
+    color: var(--accent-dark);
+    font-family: "Kanit", "Noto Sans SC", sans-serif;
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.main-body code {
+    display: inline-block;
+    margin: 0.35rem 0.3rem 0.15rem 0;
+    padding: 0.25rem 0.62rem;
+    border: 1px solid #d6dfec;
+    border-radius: 999px;
+    color: #385176;
+    background: #f7f9fc;
+    font-family: "Mulish", sans-serif;
+    font-size: 0.82rem;
+}
+
+.main-body a {
+    color: var(--accent);
+    font-weight: 700;
+    text-underline-offset: 0.22em;
+}
+
+.entries h3 {
+    position: relative;
+    margin: 0;
+    padding-top: 0.2rem;
+    color: var(--ink);
+    font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    font-size: 1.25rem;
+}
+
+.entries h3:not(:first-child) {
+    margin-top: 2.1rem;
+    padding-top: 2.1rem;
+    border-top: 1px solid var(--line);
+}
+
+.entries h3::before {
+    content: "";
+    position: absolute;
+    left: -1.35rem;
+    top: 0.74rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.entries h3:not(:first-child)::before {
+    top: 2.65rem;
+}
+
+.entries p {
+    margin: 0.75rem 0 0;
+}
+
+.honors-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.honors-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.honors-list li:first-child {
+    padding-top: 0;
+}
+
+.bg-bottom {
+    color: rgba(255,255,255,0.65);
+    background: #101a31;
+}
+
+.bg-bottom a {
+    display: inline-block;
+    margin: 0.6rem 0.55rem 0;
+    color: rgba(255,255,255,0.78);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.bg-bottom a:hover {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .header {
+        min-height: 64px;
+    }
+
+    .navbar-collapse {
+        padding-bottom: 1rem;
+    }
+
+    .top-section {
+        min-height: 580px;
+        padding: 9rem 0 6rem;
+    }
+
+    .section-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .content-section {
+        padding: 5rem 0;
+    }
+
+    .section-heading {
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .entries h3::before {
+        display: none;
+    }
+}
