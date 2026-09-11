@@ -1,5 +1,7 @@
-- **全国一等奖** · 全国大学生物联网设计竞赛（具身智能赛道），2025
-- **Honorable Mention** · 美国大学生数学建模竞赛，2025
-- **人民奖学金二等奖** · 南京大学，2024
-- **南京大学优秀学生** · 2023、2024
-- **物理 79 奖学金** · 南京大学，2023
+<ul>
+  <li><span class="award-year">2025</span><div><strong>National First Prize</strong><span>National College Student IoT Design Competition · Embodied Intelligence Track</span></div><span class="award-mark" aria-hidden="true">↗</span></li>
+  <li><span class="award-year">2025</span><div><strong>China Merchants Bank “Golden Sunflower” Scholarship</strong><span>Nanjing University</span></div></li>
+  <li><span class="award-year">2024</span><div><strong>People’s Scholarship</strong><span>Nanjing University</span></div></li>
+  <li><span class="award-year">2023, 2024</span><div><strong>Outstanding Student</strong><span>Nanjing University</span></div></li>
+  <li><span class="award-year">2023</span><div><strong>Physics ’79 Scholarship</strong><span>Nanjing University</span></div></li>
+</ul>

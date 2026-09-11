@@ -1,7 +1,7 @@
-### 医院导诊机器人系统
-
-面向具身智能场景构建“云—边—端”协同的医院导诊小车，负责边端通信、平台数据同步与本地医院信息系统开发。项目获 **2025 全国大学生物联网设计竞赛全国一等奖**。
-
-### 奥运奖牌预测与影响因素分析
-
-围绕历史赛事数据建立预测与分析模型，完成算法实现、结果评估和可视化。项目获 **2025 美国大学生数学建模竞赛 H 奖**。
+<article class="project-card">
+  <div class="project-award"><span aria-hidden="true">★</span> NATIONAL FIRST PRIZE</div>
+  <h3>2025 National College Student IoT Design Competition — National First Prize</h3>
+  <p class="project-subtitle">Hospital Guidance Robot System</p>
+  <p>Built a hospital guidance robot with a cloud–edge–device architecture for embodied intelligence applications. I was responsible for edge–device communication, platform data synchronization, and development of the local hospital information system.</p>
+  <div class="topic-tags"><span>Embodied intelligence</span><span>Cloud–edge–device</span><span>System integration</span></div>
+</article>
