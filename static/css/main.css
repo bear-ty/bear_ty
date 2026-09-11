@@ -33,8 +33,6 @@ p, h1, h2, h3 { margin-top: 0; }
 .nav-link { color: var(--muted); font-size: 13px; font-weight: 550; padding-block: 24px; position: relative; }
 .nav-link:hover, .nav-link.active { color: var(--accent); }
 .nav-link.active::after { content: ""; position: absolute; bottom: 16px; left: 0; right: 0; height: 2px; background: var(--accent); }
-.nav-contact { border: 1px solid var(--lavender); padding: 6px 13px; border-radius: 6px; font-size: 12px; }
-.nav-contact span { margin-left: 12px; }
 .nav-toggle { display: none; }
 .top-section { position: relative; color: var(--cloud); background: linear-gradient(90deg, rgb(15 23 42 / .67), rgb(15 23 42 / .18) 65%, rgb(15 23 42 / .25)), url("../assets/img/lake.jpg") center 54% / cover no-repeat; }
 .hero-layout { display: grid; grid-template-columns: 1fr 240px; align-items: center; gap: 60px; padding-block: 62px 54px; }
@@ -95,7 +93,7 @@ h2 { font-size: 24px; font-weight: 650; line-height: 1.25; letter-spacing: .8px;
 .research-category { color: var(--indigo); font-size: 9px; font-weight: 700; letter-spacing: 1.3px; }
 .work-number { font: italic 18px var(--serif); color: var(--slate); }
 .research-card h3 { font-size: 20px; line-height: 1.35; letter-spacing: -.35px; font-weight: 600; margin-bottom: 9px; }
-.featured h3 { font: 32px var(--serif); letter-spacing: -.7px; margin-bottom: 5px; }
+.research-card .research-title { font: 32px var(--serif); letter-spacing: -.7px; margin-bottom: 5px; }
 .research-card p, .project-card p { font-size: 13px; line-height: 1.85; color: var(--muted); margin-bottom: 15px; }
 .research-card .research-subtitle { color: var(--slate); font-size: 12px; font-weight: 550; line-height: 1.65; margin-bottom: 10px; }
 .motion-flow { display: flex; align-items: center; gap: 13px; margin-bottom: 19px; padding: 13px 0; border-block: 1px solid var(--lavender); font-size: 10px; color: var(--slate); }
@@ -148,7 +146,6 @@ h2 { font-size: 24px; font-weight: 650; line-height: 1.25; letter-spacing: .8px;
     .nav-links.open { display: flex; }
     .nav-link { padding: 10px; }
     .nav-link.active::after { display: none; }
-    .nav-contact { margin-top: 8px; align-self: flex-start; }
     .hero-layout { grid-template-columns: 1fr 140px; gap: 15px; padding-block: 45px 35px; }
     .hero-profile { padding: 13px 13px 15px; }
     .avatar { width: 104px; height: 104px; border-width: 3px; }
@@ -204,7 +201,7 @@ h2 { font-size: 24px; font-weight: 650; line-height: 1.25; letter-spacing: .8px;
     .research-card, .project-card { padding: 20px 18px; }
     .research-category { font-size: 8px; letter-spacing: 1px; }
     .research-card h3 { font-size: 19px; }
-    .featured h3 { font-size: 30px; }
+    .research-card .research-title { font-size: 30px; }
     .motion-flow { gap: 6px; font-size: 9px; }
     .project-card h3 { font-size: 24px; }
     .honors-list li { gap: 12px; }
